@@ -11,15 +11,15 @@
 
 </head>
 <body>
-	<div>
-		<form method="POST">
+	<div class="container">
+		<form method="POST" action="/submit">
 		<div>
 			<label>Your Name:</label>
-			<input/>
+			<input name="name"/>
 		</div>
 		<div>
 			<label>Dojo Location:</label>
-			<select>
+			<select name="location">
 				<option value="San Jose">San Jose</option>
 				<option value="Burbank">Burbank</option>
 				<option value="Seattle">Seattle</option>
@@ -35,7 +35,7 @@
 		</div>
 		<div>
 			<label>Favorite language:</label>
-			<select>
+			<select name="language">
 				<option value="Python">Python</option>
 				<option value="JavaScript">JavaScript</option>
 				<option value="Java">Java</option>
@@ -45,9 +45,9 @@
 		</div>
 		<div>
 			<label>Comments:</label>
-			<textarea></textarea>
+			<textarea name="comments"></textarea>
 		</div>
-		<button type="submit">Submit</button>
+		<button type="submit" value="submit">Submit</button>
 		</form>
 	</div>
 </body>

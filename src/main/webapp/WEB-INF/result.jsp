@@ -11,10 +11,12 @@
 
 </head>
 <body>
-	<div>
-		<div>
-			<label>Your Name:</label>
-			<input/>
+		<div class="container">
+			<h2>Submitted Info</h2>
+			<p>Your Name: <span><c:out value="${name}"/></span> </p>
+			<p>Dojo Location: <span><c:out value="${location}"/></span> </p>
+			<p>Favorite Language: <span><c:out value="${language}"/></span> </p>
+			<p>Comments: <span><c:out value="${comments}"/></span> </p>
 		</div>
 </body>
 </html>
